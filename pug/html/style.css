@@ -1,0 +1,9 @@
+.inputTab {
+  width: 100%;
+  background-color: burlywood;
+  border: 2px solid green;
+}
+
+.inputTab:focus {
+  outline: none;
+}

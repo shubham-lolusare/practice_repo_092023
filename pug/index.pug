@@ -1,0 +1,58 @@
+
+  
+mixin name(vars)
+  li= vars
+
+
+doctype html
+html
+   
+  head
+     
+    head
+        title Hello, World!
+        link(rel="stylesheet", href="./style.css")
+  body
+     nav
+        h1 My Website!!!
+        ul 
+            li 
+                a Home
+            li 
+                a Page 1
+            li 
+                a Page 2
+        input.inputTab(type="number", name="telephone", placeholder="Please enter your telephone..." ) 
+
+        
+
+        - 
+            let name = "Jim"
+            name = "Harry"
+            let arr = ["Uno", "Dos", "Tres","Cuatro", "Cinco", "Seis"]
+        
+        - for (var x = 0; x < 5; x++)
+            +name("shubham")
+
+        if name==="Jim"
+            li Double Success
+            p Waah
+        else 
+            li Haglea
+
+        ul
+            each val in arr 
+                li= val
+
+        p Hi my name is #{name}
+        p #{name} Two to the power of ten is: #{2**10}
+
+        - const employees = ['Angela', 'Jim', 'Nilson', 'Simone']
+        ul
+            each val in employees 
+                li= val 
+        
+        h1 This is the new field added
+
+
+   
