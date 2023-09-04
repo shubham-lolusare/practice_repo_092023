@@ -22,8 +22,10 @@ app.set("port", port);
 
 const server = http.createServer(app);
 
-const mongoURL =
+const dev_db_url =
   "mongodb+srv://shubhamlolusare:kATscndnbck25YEA@locallibrary.e6uxzlu.mongodb.net/localLibrary?retryWrites=true&w=majority";
+
+const mongoURL = process.env.MONGODB_URI || dev_db_url;
 
 /**
  * Connecting to mongodb database and Listen on provided port, on all network interfaces.
